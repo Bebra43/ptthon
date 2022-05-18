@@ -1,4 +1,4 @@
-import webbrowser 
+﻿import webbrowser 
 
 def obshenie():
     print('прив,я бот Disko')
@@ -15,8 +15,7 @@ def obshenie():
             if temi_obshenie1 == 'Аниме':
                 print('Классный сайт для просмотра Аниме -> JUTSU.RU')
                 print('Но ты ведь не за этим сюда пришел ты хочешь что то запрещенное ведь так?')
-                print('Ахтунг 18+')
-                webbrowser.open('https://www.youtube.com/watch?v=0AgTX1EAKAg')
+                webbrowser.open('https://www.youtube.com/watch?v=xjQ7AZpSJBg')
             if temi_obshenie1 == 'Рисование':
                 webbrowser.open('https://4brain.ru/draw/')
             if temi_obshenie1 == 'игры':
@@ -24,31 +23,41 @@ def obshenie():
                 print('🧟Dying Light 2 Stay Human🧟 - Игра про мир в котором эпидемия, похожая на вирус зомби')
                 print('Ну и другие игры, по типу: Horizon Forbidden West, Bendy and the Dark Revival, Hello Neighbor 2')
                 print('А также: Atomic Heart, God of War Ragnarok и S.T.A.L.K.E.R. 2: Heart of Chernobyl')
-                games_details = input('Выбери что ты хочешь увидеть(Описание игр или выйти(просто напиши что нибудь не по теме))').lower()
-                if games_details == 'описание игр' or games_details == 'описание':
-                        game_descriptioon == input('Введи название игры из вышеперечисленных(напиши главное правильно)').lower()
-                if game_descriptioon == 'dying light 2 stay human':
+                games_details = input('Выбери что ты хочешь увидеть(Названия игр или выйти)').lower()
+                if games_details == 'Dying Light 2 Stay Human':
                     print('Описание:')
                     webbrowser.open('https://ru.wikipedia.org/wiki/Dying_Light_2:_Stay_Human')
-                elif game_descriptioon == 'horizon forbidden west':
+                if games_details == 'horizon forbidden west':
                     print('Описание:')
                     webbrowser.open('https://ru.wikipedia.org/wiki/Horizon_Forbidden_West')
-                elif game_descriptioon == 'bendy and the dark revival':
+                if games_details == 'bendy and the dark revival':
                     print('Описание:')
                     webbrowser.open('https://bendy-and-the-ink-machine.fandom.com/ru/wiki/Bendy_and_the_Dark_Revival')
-                elif game_descriptioon == 'hello neighbor 2':
+                if games_details == 'hello neighbor 2':
                     print('Описание:')
                     webbrowser.open('https://hello-neighbor-game.fandom.com/ru/wiki/Hello_Neighbor_2')
-                elif game_descriptioon == 'atomic heart':
+                if games_details == 'atomic heart':
                     print('Описание:')
                     webbrowser.open('https://ru.wikipedia.org/wiki/Atomic_Heart')
-                elif game_descriptioon == 'god of war ragnarok':
+                if games_details == 'god of war ragnarok':
                     print('Описание:')
                     webbrowser.open('https://ru.wikipedia.org/wiki/God_of_War:_Ragnar%C3%B6k')
-                elif game_descriptioon == 'stalker 2' or game_descriptioon == 's.t.a.l.k.e.r. 2: heart of chernobyl' or game_descriptioon == 'stalker 2: heart of chernobyl':
+                if games_details == 'stalker 2' or game_descriptioon == 's.t.a.l.k.e.r. 2: heart of chernobyl' or game_descriptioon == 'stalker 2: heart of chernobyl':
                     print('Описание:')
                     webbrowser.open('https://ru.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Heart_of_Chernobyl')
             else:
                 print('Ты решил(а) пойти из темы игр, удачи')
+            if temi_obshenie1 == 'Музыка':
+                webbrowser.open('https://music.yandex.ru/home')
+                print('Советую послушать фонк ;)')
+            if temi_obshenie1 == 'напитки' or temi_obshenie1 == 'Напитки':
+                napitky = input('Алкогольные или безалкогольные?')
+                if napitky == 'Алкогольные' or napitki == 'алкогольные':
+                    webbrowser.open('https://amwine.ru/cocktails/')
+                if napitky == 'безалкогольные':
+                    webbrowser.open('https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%B7%D0%B0%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BD%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8')
+            if temi_obshenie1 == 'фразы' or temi_obshenie1 == 'Фразы':
+                webbrowser.open('https://vk.com/youtube_starss')
                 
+
 obshenie()
